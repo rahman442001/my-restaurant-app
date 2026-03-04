@@ -193,7 +193,7 @@ export default function FoodTrackApp() {
   return (
     <div style={{ fontFamily: "'Nunito', sans-serif", background: "#F7FDFE", minHeight: "100vh", maxWidth: 430, margin: "0 auto", position: "relative" }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Boogaloo&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
         ::-webkit-scrollbar { display: none; }
         .btn-pop { transition: transform 0.12s; }
@@ -211,8 +211,6 @@ export default function FoodTrackApp() {
         .nav-tab.active .nav-label { color: white; }
         .nav-label { font-size: 10px; font-weight: 800; color: #aaa; letter-spacing: 0.4px; text-transform: uppercase; font-family: 'Nunito', sans-serif; }
         .cat-pill { border: none; cursor: pointer; padding: 7px 16px; border-radius: 30px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 12px; transition: all 0.18s; white-space: nowrap; }
-        .veg-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #2E7D32; border: 1.5px solid #2E7D32; margin-right: 4px; }
-        .nonveg-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #C62828; border: 1.5px solid #C62828; margin-right: 4px; }
       `}</style>
 
       {/* Notification */}
@@ -281,10 +279,7 @@ export default function FoodTrackApp() {
       <div style={{ background: `linear-gradient(135deg, ${TEAL}, #009ab0)`, padding: "18px 18px 14px", position: "sticky", top: 0, zIndex: 100 }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
-            <div style={{ fontSize: 24, fontWeight: 900, color: "white", letterSpacing: "-0.5px", lineHeight: 1 }}>
-              🍔 Food<span style={{ color: ORANGE }}>Track</span>
-            </div>
-            <div style={{ fontSize: 10, color: "rgba(255,255,255,0.8)", fontWeight: 700, marginTop: 2, letterSpacing: 1, textTransform: "uppercase" }}>Travel with Taste ™</div>
+            <img src="/logo.png" alt="Food Track" style={{ height: 52, objectFit: "contain" }} />
           </div>
           <button onClick={() => setCartOpen(true)} className="btn-pop" style={{ position: "relative", background: "white", border: "none", borderRadius: 14, width: 44, height: 44, fontSize: 20, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 2px 8px rgba(0,0,0,0.15)" }}>
             🛒
@@ -305,7 +300,7 @@ export default function FoodTrackApp() {
             <div style={{ margin: "14px", borderRadius: 20, background: `linear-gradient(135deg, ${DARK} 55%, #16213E)`, padding: "22px 20px", position: "relative", overflow: "hidden" }}>
               <div style={{ position: "absolute", right: -8, top: -8, fontSize: 100, opacity: 0.1 }}>🍔</div>
               <div style={{ fontSize: 10, color: ORANGE, fontWeight: 900, letterSpacing: 2, textTransform: "uppercase", marginBottom: 6 }}>Hyderabad's Favourite</div>
-              <div style={{ fontSize: 24, fontWeight: 900, color: "white", lineHeight: 1.25 }}>Hot & Fresh.<br/><span style={{ color: TEAL }}>Delivered to you.</span></div>
+              <div style={{ fontSize: 28, fontFamily: "'Boogaloo', cursive", color: "white", lineHeight: 1.25 }}>Hot & Fresh.<br/><span style={{ color: TEAL }}>Delivered to you.</span></div>
               <div style={{ fontSize: 12, color: "rgba(255,255,255,0.6)", fontWeight: 600, marginTop: 6 }}>Free delivery within 2km 🚴</div>
               <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
                 <button onClick={() => setPage("menu")} className="btn-pop" style={{ background: TEAL, color: "white", border: "none", borderRadius: 12, padding: "10px 18px", fontFamily: "'Nunito', sans-serif", fontSize: 13, fontWeight: 900, cursor: "pointer" }}>
@@ -438,9 +433,8 @@ export default function FoodTrackApp() {
               </div>
             ))}
 
-            <div style={{ background: `linear-gradient(135deg, ${TEAL}, #009ab0)`, borderRadius: 18, padding: "18px", marginTop: 4, textAlign: "center" }}>
-              <div style={{ fontWeight: 900, fontSize: 18, color: "white" }}>🍔 Food<span style={{ color: ORANGE }}>Track</span></div>
-              <div style={{ fontWeight: 700, fontSize: 11, color: "rgba(255,255,255,0.8)", marginTop: 3, letterSpacing: 1.5, textTransform: "uppercase" }}>Travel with Taste ™</div>
+            <div style={{ background: `linear-gradient(135deg, ${TEAL}, #009ab0)`, borderRadius: 18, padding: "18px", marginTop: 4, textAlign: "center", display: "flex", justifyContent: "center" }}>
+              <img src="/logo.png" alt="Food Track" style={{ height: 80, objectFit: "contain" }} />
             </div>
           </div>
         )}
