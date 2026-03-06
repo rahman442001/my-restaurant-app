@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import logoImg from "/logo.png";
+import logoImg from "./logo.png";
 
 const MENU = {
   Sandwiches: [
