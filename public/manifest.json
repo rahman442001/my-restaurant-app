@@ -1,0 +1,24 @@
+{
+  "name": "Food Track - Travel with Taste",
+  "short_name": "FoodTrack",
+  "description": "Order burgers, wraps, pizza & more from Food Track Hyderabad",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#00B4C8",
+  "theme_color": "#00B4C8",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
