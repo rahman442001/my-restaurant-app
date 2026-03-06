@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import logoImg from "/logo.png";
 
 const MENU = {
   Sandwiches: [
@@ -279,7 +280,7 @@ export default function FoodTrackApp() {
       <div style={{ background: `linear-gradient(135deg, ${TEAL}, #009ab0)`, padding: "18px 18px 14px", position: "sticky", top: 0, zIndex: 100 }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
-            <img src="/logo.png" alt="Food Track" style={{ height: 52, objectFit: "contain" }} />
+            <img src={logoImg} alt="Food Track" style={{ height: 52, objectFit: "contain" }} />
           </div>
           <button onClick={() => setCartOpen(true)} className="btn-pop" style={{ position: "relative", background: "white", border: "none", borderRadius: 14, width: 44, height: 44, fontSize: 20, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 2px 8px rgba(0,0,0,0.15)" }}>
             🛒
@@ -434,7 +435,7 @@ export default function FoodTrackApp() {
             ))}
 
             <div style={{ background: `linear-gradient(135deg, ${TEAL}, #009ab0)`, borderRadius: 18, padding: "18px", marginTop: 4, textAlign: "center", display: "flex", justifyContent: "center" }}>
-              <img src="/logo.png" alt="Food Track" style={{ height: 80, objectFit: "contain" }} />
+              <img src={logoImg} alt="Food Track" style={{ height: 80, objectFit: "contain" }} />
             </div>
           </div>
         )}
